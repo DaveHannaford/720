@@ -15,7 +15,6 @@
 //  VERSION     :0.1
 //  DATE        :12 June 2014
 //  COMMENTS    :See Main.C for details.
-//
 //***********************************************************************************************************************
 //*****************************Directives********************************************************************************
 #include <xc.h>
@@ -206,7 +205,7 @@ void CalcDialOutput(void)
 {
     int iValue;
     unsigned char ucI;
-    
+
     for(iValue=0,ucI=0;ucI!=(unsigned char)ThumbWheelReadingArray;ucI++)    //sum the array
     {
         iValue+=Meas.iThumbWheelReadingArray[ucI];
